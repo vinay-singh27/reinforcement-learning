@@ -1,0 +1,18 @@
+(21, 10, True) = env.reset()
+
+--- 
+Here,
+    21 - sum of cards in hand of the player 
+    10 - card shown by dealer
+    True - If the player's ace is usable or not 
+
+Discrete(2) = env.action_space() 
+1 and 0 are the possible actions 
+
+((18, 10, False), 0.0, False, {}) = env.step() 
+
+Here, 
+    (18, 10, False) - observation of the player 
+    0.0 - reward for the player
+    False - whether the episode is completed or not 
+    {} -- info
